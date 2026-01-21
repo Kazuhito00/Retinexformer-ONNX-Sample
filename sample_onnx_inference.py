@@ -198,7 +198,7 @@ def process_camera(camera_id, output_path, session):
 def main():
     # 引数解析
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", "-i", help="Input video path")
+    parser.add_argument("--video", "-v", help="Input video path")
     parser.add_argument("--camera", "-c", type=int, default=0, help="Camera ID (default: 0)")
     parser.add_argument("--output", "-o", help="Output video path (optional)")
     parser.add_argument("--onnx", default="onnx_models/retinexformer_lol_v1.onnx", help="ONNX model path")
@@ -211,8 +211,8 @@ def main():
     session = create_session(args.onnx, use_gpu=args.use_gpu)
 
     # 処理実行
-    if args.input:
-        process_video(args.input, args.output, session)
+    if args.video:
+        process_video(args.video, args.output, session)
     else:
         process_camera(args.camera, args.output, session)
 
