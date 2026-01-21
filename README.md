@@ -1,10 +1,10 @@
 # Retinexformer-ONNX-Sample
-Low-Light Image Enhancement モデルである [caiyuanhao1998/Retinexformer](https://github.com/caiyuanhao1998/Retinexformer) のONNX推論サンプルです。
+Low-Light Image Enhancement モデルである [caiyuanhao1998/Retinexformer](https://github.com/caiyuanhao1998/Retinexformer) のONNX推論サンプルです。<br><br>
+![Retinexformer](https://github.com/user-attachments/assets/15f1bfc7-2ece-48e2-80d1-1e9b7d8e8bff)
 
 # Requirement
 * opencv-python
 * onnxruntime
-* numpy
 
 # Demo
 ## Webカメラで実行
